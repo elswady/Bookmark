@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="png/001-bookmark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <main class="bookmark">
+      <div class="container overflow-auto">
+        <div
+          class="bookmark-head text-center d-flex justify-content-center align-items-center"
+        >
+          <h1>Bookmarker</h1>
+        </div>
+        <div class="bookmark-input p-4 mb-4">
+          <h2 class="text-center">
+            <span><i class="fa-solid fa-bookmark"></i></span> Bookmark your
+            favorite sites <span><i class="fa-solid fa-bookmark"></i></span>
+          </h2>
+          <form>
+            <label for="siteName" class="form-label mt-4"
+              ><span><i class="fa-solid fa-book-bookmark"></i></span> Site
+              Name</label
+            >
+            <input
+              oninput="validate(this)"
+              type="text"
+              id="siteName"
+              class="form-control"
+              placeholder="Bookmark Name"
+            />
+
+            <label for="siteUrl" class="form-label mt-4"
+              ><span><i class="fa-solid fa-link"></i></span> Site URL</label
+            >
+            <input
+              oninput="validate(this)"
+              type="text"
+              id="siteUrl"
+              class="form-control"
+              placeholder="Website URL"
+            />
+            <button
+              onclick="addSite()"
+              type="button"
+              class="translate-middle-x position-relative start-50 mt-4 btn-submit rounded-1"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="bookmark-display row">
+          <div class="col-12 text-center">
+            <table class="w-100 table">
+              <thead>
+                <tr>
+                  <th>index</th>
+                  <th>Website Name</th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="demo"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

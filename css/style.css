@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(../webfonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: PTSansCaption;
+    src: url(../webfonts/PTSansCaption-Regular.ttf);
+}
+@font-face {
+    font-family: Righteous;
+    src: url(../webfonts/Righteous-Regular.ttf);
+}
+.bookmark{
+    background-color: #f7ecde;
+    min-height: 100vh;
+}
+.bookmark-head{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.bookmark-head h1{
+    font-family: Pacifico;
+    font-size: 50px;
+    font-weight: 500;
+    color: #352e28;
+    position: relative;
+    z-index: 10;
+    transition: all 0.5;
+    width: 17rem;
+}
+.bookmark-head h1::after{
+    content: "";
+    background-color: #fec260;
+    width: 17rem;
+    height: 1.3rem;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: height 0.5s;
+}
+.bookmark-head h1:hover::after{
+    height: 2.5rem;
+}
+.bookmark-input{
+    border: dotted 2px;
+    border-color: #000 transparent #000 transparent;
+}
+.bookmark-input h2{
+    font-family: Righteous;
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.form-control:focus{
+    border-color: #d99c39 ;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.bookmark-input label{
+    color: #212529;
+    font-family: PTSansCaption;
+    font-size: 16px;
+    font-weight: 600;
+}
+.bookmark-input input{
+    color: #212529;
+    font-family: PTSansCaption;
+
+}
+.btn-submit{
+    background-color: #d1512d;
+    color: #fff;
+    border: 1px #d1512d solid;
+    width: 9rem;
+    height: 2.3rem;
+    font-family: PTSansCaption;
+}
+.btn-submit:hover{
+    background-color: #bb4120;
+}
+.bookmark-display table thead tr th{
+    color: #212529;
+    font-family: PTSansCaption;
+    font-size: 16px;
+    font-weight: 700;
+}
+.bookmark-display table tbody tr td{
+    color: #212529;
+    font-family: PTSansCaption;
+}
+.bookmark-display table tbody tr td button{
+    font-family: PTSansCaption;
+    color: #fff;
+    background-color: #eb1d36;
+    border: 1px solid #eb1d36;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 5px;
+}
+.bookmark-display table tbody tr td button:hover{
+    background-color: #d30820;
+}
+.bookmark-display table tbody tr td a{
+    text-decoration: none;
+    color: #fff;
+    font-family: PTSansCaption;
+    background-color: #9eb23b;
+    border: 1px solid #9eb23b;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 5px;
+    padding-top: 4px;
+}
+.bookmark-display table tbody tr td a:hover{
+    background-color: #8a9e23;
+}
