@@ -52,10 +52,8 @@ function displaySite(){
                 </td>
             </tr>
         `
-        document.getElementById('demo').innerHTML= box
-        
     }
-    
+    document.getElementById('demo').innerHTML= box
 }
 
 function resetInput(){
